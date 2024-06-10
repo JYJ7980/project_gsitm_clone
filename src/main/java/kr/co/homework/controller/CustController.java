@@ -25,8 +25,18 @@ public class CustController {
 	
 	@PostMapping("/newCustConfirm")
 	public String newCustConfirm(CustDto custDto) {
+		String birth = custDto.getPridtf_no().substring(0,6);
+		int divisionCode=Integer.parseInt(custDto.getPridtf_no().substring(7,8));
+		if(divisionCode == 1 || divisionCode ==2) {
+			custDto.setBrdt("19"+birth);
+		} else if (divisionCode == 3 || divisionCode == 4) {
+			custDto.setBrdt("20"+birth);
+		} // 주민번호에서 생년월일 추출하여  DTO에 삽입
 		System.out.println(custDto.toString());
+		custService.newCustConfirm(custDto);
 		return "redirect:/newCustForm";
 	}
+	
+	
 
 }

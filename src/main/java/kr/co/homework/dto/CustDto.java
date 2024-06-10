@@ -17,8 +17,8 @@ public class CustDto {
 	private String road_nm_addr;	// 도로명 주소
 	private String pic_sn_vl;		// 담당자 일련번호
 	private String tkcg_dept_nm;	// 담당부서명
-	private String first_reg_dt;	// 최초등록일시
-	private String first_rgtr_sn;	// 최초 등록자 일련번호
+	private String frst_reg_dt;		// 최초등록일시
+	private String frst_rgtr_sn;	// 최초 등록자 일련번호
 	private String last_mdfcn_dt;	// 최종 수정 일시
 	private String use_yn;			// 사용 여부
 

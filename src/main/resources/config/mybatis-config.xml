@@ -4,6 +4,7 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="kr.co.homework.dto.CustDto" alias="custDto"></typeAlias>
+		<typeAlias type="kr.co.homework.dto.CustDto" alias="customerDto"></typeAlias>
 		<typeAlias type="kr.co.homework.dto.PicDto" alias="picDto"></typeAlias>
 		<typeAlias type="kr.co.homework.dto.ConsultationDto" alias="consultationDto"></typeAlias>
 	</typeAliases>
